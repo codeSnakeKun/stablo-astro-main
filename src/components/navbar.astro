@@ -1,7 +1,7 @@
 ---
 import Container from "@/components/container.astro";
-import logoImage from "@/assets/logo.jpg";
-import darkLogo from "@/assets/logo.jpg";
+import logoImage from "@/assets/logo.svg";
+import darkLogo from "@/assets/logo-dark.svg";
 import { Image } from "astro:assets";
 
 interface Menu {
@@ -12,16 +12,17 @@ interface Menu {
 }
 const leftmenu: Menu[] = [
   {
-    label: "首页",
+    label: "Home",
     href: "/",
   },
 ];
 
 const rightmenu: Menu[] = [
   {
-    label: "活动",
+    label: "Archive",
     href: "/archive",
   },
+
 ];
 
 const mobilemenu: Menu[] = [...leftmenu, ...rightmenu];
